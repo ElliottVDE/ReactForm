@@ -91,7 +91,14 @@ const [submitted, setSubmitted] = useState(false); // NEW
         <img
           src={formGraphic}
           alt="Form Graphic"
-          style={{ width: '250px', height: '250px', objectFit: 'contain' }}
+          style={{
+            width: '250px',
+            height: '250px',
+            objectFit: 'fill', // better for filling the circle
+            borderRadius: '50%',
+            border: '5px solid white' // adjust thickness as needed
+
+          }}
         />
         <p style={{ color: '#ddd', fontSize: '0.85rem', marginTop: '0.5rem', marginBottom: '0.5rem'}}>
           Show excitement for the new Spidr Air-matic today for a limited discount!
@@ -140,10 +147,10 @@ const [submitted, setSubmitted] = useState(false); // NEW
         <div
           style={{
             padding: '0.5rem 0.75rem',
-            backgroundColor: '#00c3ff',
+            backgroundColor: '#ffffffff',
             color: 'white',
             borderRadius: '4px',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
+            border: '1px solid black',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -153,8 +160,8 @@ const [submitted, setSubmitted] = useState(false); // NEW
             flex: 1,
           }}
         >
-          <span style={{ fontSize: '1.2rem', fontWeight: '600', textDecoration: 'line-through', color: '#FF0000' }}>$99</span>
-          <span style={{ fontSize: '1rem', color: '#FFFFFF', fontWeight: 'bold' }}>Now $49.99</span>
+          <span style={{ fontSize: '1.2rem', fontWeight: '600',  textDecoration: 'line-through', color: '#FF0000' }}>$99</span>
+          <span style={{ fontSize: '1rem', color: 'black', fontWeight: 'bold' }}>Now $49.99</span>
         </div>
 
       <button
@@ -163,7 +170,7 @@ const [submitted, setSubmitted] = useState(false); // NEW
         padding: '0.5rem',
         backgroundColor: '#00c3ff',
         color: 'white',
-        border: 'none',
+        border: '1px solid white',
         borderRadius: '4px',
         cursor: 'pointer',
         flex: 1,
