@@ -96,7 +96,7 @@ const [submitted, setSubmitted] = useState(false); // NEW
             height: '250px',
             objectFit: 'fill', // better for filling the circle
             borderRadius: '50%',
-            border: '5px solid white' // adjust thickness as needed
+            border: '5px solid black' // adjust thickness as needed
 
           }}
         />
